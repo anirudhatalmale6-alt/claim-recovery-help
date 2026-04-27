@@ -49,8 +49,8 @@ body{font-family:var(--font-body);color:var(--text);background:var(--cream);line
 .nav-cta:hover{background:var(--gold-dim);color:var(--white)}
 
 /* ---- HERO ---- */
-.hero{background:linear-gradient(170deg,var(--navy) 0%,var(--navy-mid) 50%,var(--navy-light) 100%);position:relative;overflow:hidden;padding:2.5rem 1.5rem 3rem}
-.hero::before{content:'';position:absolute;top:0;left:0;width:100%;height:100%;background:linear-gradient(170deg,rgba(26,39,68,.92) 0%,rgba(36,52,86,.88) 40%,rgba(46,66,104,.82) 100%);pointer-events:none}
+.hero{background:linear-gradient(170deg,var(--navy) 0%,var(--navy-mid) 50%,var(--navy-light) 100%);position:relative;overflow:hidden;padding:2.5rem 1.5rem 3rem;background-image:url('hero-bg.jpg');background-size:cover;background-position:center top}
+.hero::before{content:'';position:absolute;top:0;left:0;width:100%;height:100%;background:linear-gradient(170deg,rgba(26,39,68,.88) 0%,rgba(36,52,86,.82) 40%,rgba(46,66,104,.78) 100%);pointer-events:none}
 .hero-inner{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:2.5rem;align-items:start;position:relative;z-index:2}
 .hero-left{padding-top:1rem}
 .hero-badge{display:inline-block;background:rgba(197,164,78,.15);border:1px solid rgba(197,164,78,.3);color:var(--gold-light);font-size:.85rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;padding:.4rem 1.2rem;border-radius:50px;margin-bottom:1.2rem;animation:fadeDown .8s ease}
