@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Property Damage Insurance Claim Recovery | Free Case Review | ClaimRecoveryHelp.com</title>
+<meta name="description" content="Was your insurance claim underpaid or denied? Our experts help homeowners recover the full amount they deserve for property damage. Free case review, no fees unless you recover.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400&family=Source+Sans+3:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --navy:#1a2744;
+  --navy-mid:#243456;
+  --navy-light:#2e4268;
+  --gold:#c5a44e;
+  --gold-light:#d4b96e;
+  --gold-dim:#a88a3a;
+  --cream:#faf8f3;
+  --cream-dark:#f2efe8;
+  --white:#ffffff;
+  --text:#3a3a4a;
+  --text-light:#6a6a7a;
+  --text-muted:#8a8a9a;
+  --border:#ddd8cc;
+  --success:#2d7a4f;
+  --red-accent:#c0392b;
+  --font-display:'Playfair Display',Georgia,'Times New Roman',serif;
+  --font-body:'Source Sans 3','Segoe UI',system-ui,sans-serif;
+}
+html{scroll-behavior:smooth}
+body{font-family:var(--font-body);color:var(--text);background:var(--cream);line-height:1.7;font-size:1.2rem;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+
+/* ---- TOPBAR ---- */
+.topbar{background:var(--navy);color:rgba(255,255,255,.7);font-size:.88rem;letter-spacing:.04em;padding:.55rem 0;text-align:center}
+.topbar strong{color:var(--gold-light);font-weight:600}
+
+/* ---- NAV ---- */
+.nav{background:var(--white);border-bottom:1px solid var(--border);padding:1rem 0;position:sticky;top:0;z-index:100;box-shadow:0 1px 8px rgba(10,22,40,.06)}
+.nav-inner{max-width:1100px;margin:0 auto;padding:0 1.5rem;display:flex;align-items:center;justify-content:space-between}
+.nav-brand{font-family:var(--font-display);font-size:1.5rem;font-weight:800;color:var(--navy);text-decoration:none;display:flex;align-items:center;gap:.5rem}
+.nav-brand .icon{width:28px;height:28px;background:var(--navy);border-radius:4px;display:flex;align-items:center;justify-content:center}
+.nav-brand .icon svg{width:16px;height:16px}
+.nav-right{display:flex;align-items:center;gap:1.2rem}
+.nav-phone{font-family:var(--font-body);font-size:.92rem;font-weight:600;color:var(--navy);text-decoration:none;letter-spacing:.02em;white-space:nowrap}
+.nav-phone svg{width:14px;height:14px;vertical-align:middle;margin-right:.3rem;color:var(--gold)}
+.nav-cta{background:var(--gold);color:var(--navy);font-weight:600;font-size:.95rem;padding:.65rem 1.5rem;border-radius:4px;text-decoration:none;letter-spacing:.02em;transition:all .25s}
+.nav-cta:hover{background:var(--gold-dim);color:var(--white)}
+
+/* ---- HERO ---- */
+.hero{background:linear-gradient(170deg,var(--navy) 0%,var(--navy-mid) 50%,var(--navy-light) 100%);position:relative;overflow:hidden;padding:2.5rem 1.5rem 3rem}
+.hero::before{content:'';position:absolute;top:0;left:0;width:100%;height:100%;background:linear-gradient(170deg,rgba(26,39,68,.92) 0%,rgba(36,52,86,.88) 40%,rgba(46,66,104,.82) 100%);pointer-events:none}
+.hero-inner{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:2.5rem;align-items:start;position:relative;z-index:2}
+.hero-left{padding-top:1rem}
+.hero-badge{display:inline-block;background:rgba(197,164,78,.15);border:1px solid rgba(197,164,78,.3);color:var(--gold-light);font-size:.85rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;padding:.4rem 1.2rem;border-radius:50px;margin-bottom:1.2rem;animation:fadeDown .8s ease}
+.hero h1{font-family:var(--font-display);font-size:clamp(1.7rem,4vw,2.6rem);font-weight:700;color:var(--white);line-height:1.2;margin-bottom:1rem;animation:fadeDown .8s ease .1s both}
+.hero h1 em{font-style:italic;color:var(--gold-light)}
+.hero-sub{font-size:clamp(1rem,2vw,1.15rem);color:rgba(255,255,255,.7);font-weight:300;max-width:520px;line-height:1.6;margin-bottom:1.5rem;animation:fadeDown .8s ease .2s both}
+.hero-checks{list-style:none;padding:0;margin-bottom:1.5rem;animation:fadeDown .8s ease .25s both}
+.hero-checks li{color:rgba(255,255,255,.85);font-size:1.05rem;margin-bottom:.5rem;padding-left:1.6rem;position:relative}
+.hero-checks li::before{content:'';position:absolute;left:0;top:.35rem;width:14px;height:14px;background:var(--gold);border-radius:3px}
+.hero-checks li::after{content:'';position:absolute;left:3px;top:.4rem;width:8px;height:5px;border-left:2px solid var(--navy);border-bottom:2px solid var(--navy);transform:rotate(-45deg)}
+.hero-stats{display:flex;gap:2rem;padding-top:1.2rem;border-top:1px solid rgba(255,255,255,.1);animation:fadeDown .8s ease .3s both}
+.hero-stat{text-align:center}
+.hero-stat-num{font-family:var(--font-display);font-size:1.3rem;font-weight:700;color:var(--gold-light)}
+.hero-stat-label{font-size:.78rem;color:rgba(255,255,255,.5);text-transform:uppercase;letter-spacing:.08em;margin-top:.15rem}
+
+/* Hero form card */
+.hero-form-card{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:10px;padding:1.8rem;backdrop-filter:blur(8px);animation:fadeDown .8s ease .2s both}
+.hero-form-card h3{font-family:var(--font-display);font-size:1.2rem;color:var(--white);margin-bottom:.3rem;text-align:center}
+.hero-form-card .hero-form-sub{font-size:.85rem;color:rgba(255,255,255,.75);text-align:center;margin-bottom:1.2rem}
+.hero-form-card .form-group{margin-bottom:.8rem}
+.hero-form-card .form-group label{display:block;font-size:1rem;font-weight:600;color:rgba(255,255,255,.92);margin-bottom:.3rem}
+.hero-form-card .form-group input,.hero-form-card .form-group select{width:100%;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.15);border-radius:5px;padding:.75rem .9rem;font-family:var(--font-body);font-size:1.05rem;color:var(--white);outline:none;transition:all .25s;-webkit-appearance:none;appearance:none}
+.hero-form-card .form-group input::placeholder{color:rgba(255,255,255,.3)}
+.hero-form-card .form-group input:focus,.hero-form-card .form-group select:focus{border-color:var(--gold);background:rgba(255,255,255,.12);box-shadow:0 0 0 3px rgba(197,164,78,.15)}
+.hero-form-card .form-group select option{color:#333}
+.hero-form-card .hero-form-row{display:grid;grid-template-columns:1fr 1fr;gap:.8rem}
+.hero-form-card .hero-form-submit{margin-top:.6rem;width:100%;background:var(--gold);color:var(--navy);font-family:var(--font-body);font-size:1.05rem;font-weight:700;padding:.9rem;border:none;border-radius:5px;cursor:pointer;transition:all .3s}
+.hero-form-card .hero-form-submit:hover{background:var(--gold-light);transform:translateY(-1px);box-shadow:0 4px 16px rgba(197,164,78,.35)}
+.hero-form-card .hero-form-submit:disabled{opacity:.6;cursor:not-allowed;transform:none}
+.hero-form-card .form-note{text-align:center;font-size:.78rem;color:rgba(255,255,255,.35);margin-top:.7rem}
+.hero-form-card .form-note svg{width:11px;height:11px;vertical-align:middle;margin-right:.25rem}
+@media(max-width:768px){
+  .hero-inner{grid-template-columns:1fr}
+  .hero-left{text-align:center}
+  .hero-checks{display:inline-block;text-align:left}
+  .hero-stats{justify-content:center}
+  .hero-form-card .hero-form-row{grid-template-columns:1fr}
+}
+
+/* ---- SECTION BASE ---- */
+.section{max-width:1100px;margin:0 auto;padding:4.5rem 1.5rem}
+.section-label{font-size:.82rem;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:var(--gold-dim);margin-bottom:.8rem}
+.section-title{font-family:var(--font-display);font-size:clamp(1.6rem,4vw,2.2rem);font-weight:700;color:var(--navy);line-height:1.25;margin-bottom:1rem}
+.section-desc{font-size:1.12rem;color:var(--text-light);max-width:640px;line-height:1.7;font-weight:300}
+
+/* ---- INFO RIBBON ---- */
+.info-ribbon{background:var(--navy);text-align:center;padding:1.2rem 1.5rem;border-top:2px solid var(--gold);border-bottom:2px solid var(--gold)}
+.info-ribbon p{color:rgba(255,255,255,.7);font-family:var(--font-display);font-size:1.1rem;font-style:italic;letter-spacing:.04em;max-width:800px;margin:0 auto}
+.info-ribbon p strong{color:var(--gold-light)}
+.shield-icon{display:inline-block;width:18px;height:20px;position:relative;margin:0 .5rem;vertical-align:middle}
+.shield-icon::before{content:'';position:absolute;top:0;left:0;width:18px;height:20px;background:var(--gold);clip-path:polygon(50% 0%,100% 15%,100% 65%,50% 100%,0% 65%,0% 15%);opacity:.5}
+
+/* ---- ABOUT ---- */
+.about{background:var(--white);border-top:3px solid var(--gold)}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:2.5rem;margin-top:2.5rem}
+.about-card{background:var(--cream);border-radius:8px;padding:2rem;border-left:3px solid var(--gold)}
+.about-card h3{font-family:var(--font-display);font-size:1.15rem;color:var(--navy);margin-bottom:.6rem}
+.about-card p{font-size:1.05rem;color:var(--text-light);line-height:1.7}
+@media(max-width:640px){.about-grid{grid-template-columns:1fr}}
+
+/* ---- QUALIFY ---- */
+.qualify-list{display:grid;gap:1rem;margin-top:2rem;counter-reset:qualify}
+.qualify-item{display:flex;gap:1.2rem;align-items:flex-start;background:var(--white);border-radius:8px;padding:1.5rem;border:1px solid var(--border);transition:border-color .3s}
+.qualify-item:hover{border-color:var(--gold)}
+.qualify-num{counter-increment:qualify;flex-shrink:0;width:40px;height:40px;background:var(--navy);color:var(--gold-light);font-family:var(--font-display);font-weight:700;font-size:1rem;border-radius:50%;display:flex;align-items:center;justify-content:center}
+.qualify-num::before{content:counter(qualify)}
+.qualify-text h4{font-size:1.08rem;font-weight:600;color:var(--navy);margin-bottom:.3rem}
+.qualify-text p{font-size:1rem;color:var(--text-light);line-height:1.6}
+
+/* ---- DAMAGE TYPES (CONDITIONS) ---- */
+.conditions{background:var(--white)}
+.conditions-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:.8rem;margin-top:2rem}
+.condition-tag{background:var(--cream);border:1px solid var(--border);border-radius:6px;padding:.7rem 1rem;font-size:.95rem;color:var(--navy);font-weight:500;text-align:center;transition:border-color .3s}
+.condition-tag:hover{border-color:var(--gold)}
+@media(max-width:900px){.conditions-grid{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:640px){.conditions-grid{grid-template-columns:repeat(2,1fr)}}
+
+/* ---- TRUST ---- */
+.trust-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2rem;margin-top:2.5rem}
+.trust-card{text-align:center;padding:2rem 1.5rem}
+.trust-icon{width:56px;height:56px;background:linear-gradient(135deg,var(--navy),var(--navy-light));border-radius:12px;display:flex;align-items:center;justify-content:center;margin:0 auto 1.2rem}
+.trust-icon svg{width:26px;height:26px;color:var(--gold-light)}
+.trust-card h3{font-family:var(--font-display);font-size:1.18rem;color:var(--navy);margin-bottom:.5rem}
+.trust-card p{font-size:1rem;color:var(--text-light);line-height:1.6}
+@media(max-width:700px){.trust-grid{grid-template-columns:1fr}}
+
+/* ---- FAQ ---- */
+.faq{background:var(--white)}
+.faq-list{max-width:800px;margin-top:2rem}
+.faq-item{border-bottom:1px solid var(--border)}
+.faq-question{width:100%;background:none;border:none;padding:1.2rem 0;font-family:var(--font-body);font-size:1.1rem;font-weight:600;color:var(--navy);text-align:left;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:1rem;line-height:1.4}
+.faq-question:hover{color:var(--gold-dim)}
+.faq-question svg{flex-shrink:0;width:20px;height:20px;color:var(--gold);transition:transform .3s}
+.faq-item.open .faq-question svg{transform:rotate(180deg)}
+.faq-answer{max-height:0;overflow:hidden;transition:max-height .4s ease,padding .3s ease}
+.faq-item.open .faq-answer{max-height:300px;padding-bottom:1.2rem}
+.faq-answer p{font-size:1.05rem;color:var(--text-light);line-height:1.7}
+
+/* ---- CTA BANNER ---- */
+.cta-banner{background:linear-gradient(135deg,var(--navy) 0%,var(--navy-mid) 100%);text-align:center;padding:3.5rem 1.5rem;border-top:3px solid var(--gold)}
+.cta-banner h2{font-family:var(--font-display);font-size:clamp(1.5rem,3.5vw,2rem);color:var(--white);margin-bottom:.8rem}
+.cta-banner p{color:rgba(255,255,255,.6);font-size:1.1rem;margin-bottom:1.5rem;max-width:600px;margin-left:auto;margin-right:auto}
+.cta-banner-btn{display:inline-block;background:var(--gold);color:var(--navy);font-family:var(--font-body);font-size:1.1rem;font-weight:700;padding:.9rem 2.5rem;border-radius:5px;text-decoration:none;transition:all .3s}
+.cta-banner-btn:hover{background:var(--gold-light);transform:translateY(-2px);box-shadow:0 6px 20px rgba(197,164,78,.4)}
+
+/* ---- THANK YOU ---- */
+.thank-you{display:none;text-align:center;padding:2rem .5rem}
+.thank-you.show{display:block;animation:fadeDown .6s ease}
+.thank-you-icon{width:60px;height:60px;background:rgba(45,122,79,.15);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 1rem}
+.thank-you-icon svg{width:30px;height:30px;color:var(--success)}
+.thank-you h3{font-family:var(--font-display);font-size:1.4rem;color:var(--white);margin-bottom:.5rem}
+.thank-you p{color:rgba(255,255,255,.65);font-size:.95rem;max-width:380px;margin:0 auto;line-height:1.6}
+
+/* ---- FOOTER ---- */
+.footer{background:var(--navy);padding:2.5rem 1.5rem;text-align:center}
+.footer-disc{max-width:800px;margin:0 auto;font-size:.85rem;color:rgba(255,255,255,.35);line-height:1.7}
+.footer-contact{margin-top:1.2rem;font-size:.9rem;color:rgba(255,255,255,.5);line-height:1.6}
+.footer-contact strong{color:rgba(255,255,255,.65)}
+.footer-links{margin-top:1rem;font-size:.88rem}
+.footer-links a{color:rgba(255,255,255,.45);text-decoration:none;transition:color .2s}
+.footer-links a:hover{color:rgba(255,255,255,.7)}
+.legal-modal{display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,.6);z-index:9999;align-items:center;justify-content:center;padding:1.5rem}
+.legal-modal-content{background:var(--white);color:var(--text);max-width:700px;width:100%;max-height:85vh;overflow-y:auto;border-radius:8px;padding:2.5rem;position:relative;line-height:1.7;font-size:1rem}
+.legal-modal-content h2{font-family:var(--font-display);font-size:1.6rem;color:var(--navy);margin-bottom:1rem}
+.legal-modal-content h3{font-size:1.05rem;font-weight:600;color:var(--navy);margin:1.2rem 0 .4rem}
+.legal-modal-content p{color:var(--text-light);margin-bottom:.6rem}
+.legal-close{position:absolute;top:1rem;right:1.2rem;background:none;border:none;font-size:1.8rem;color:var(--text-muted);cursor:pointer;line-height:1}
+.legal-close:hover{color:var(--navy)}
+.footer-copy{margin-top:1.2rem;font-size:.82rem;color:rgba(255,255,255,.2)}
+
+/* ---- ANIMATIONS ---- */
+@keyframes fadeDown{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s ease}
+.reveal.visible{opacity:1;transform:translateY(0)}
+
+/* ---- MOBILE ---- */
+@media(max-width:768px){
+  .nav-phone{display:none}
+}
+@media(max-width:600px){
+  body{font-size:1.25rem}
+  .hero{padding:3rem 1.25rem 3.5rem}
+  .hero-stats{gap:1.5rem;flex-wrap:wrap}
+  .section{padding:3rem 1.25rem}
+  .about-card p,.section-desc,.info-ribbon p{font-size:1.15rem}
+  .topbar{font-size:.95rem}
+  .cta-banner{padding:2.5rem 1.25rem}
+}
+</style>
+</head>
+<body>
+
+<!-- Topbar -->
+<div class="topbar">
+  <strong>Property Damage Claim Recovery</strong> &mdash; Free case review &bull; No fees unless you recover
+</div>
+
+<!-- Nav -->
+<nav class="nav">
+  <div class="nav-inner">
+    <div>
+      <a href="#" class="nav-brand">
+        <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="#d4b96e" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg></span>
+        Claim Recovery Help
+      </a>
+    </div>
+    <div class="nav-right">
+      <a href="tel:" class="nav-phone">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+        CALL (XXX) XXX-XXXX
+      </a>
+      <a href="#" class="nav-cta" onclick="document.getElementById('form').scrollIntoView({behavior:'smooth'});return false;">Free Case Review</a>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero -->
+<section class="hero">
+  <div class="hero-inner">
+    <div class="hero-left">
+      <span class="hero-badge">Property Damage Claims</span>
+      <h1>Was Your Insurance Claim <em>Underpaid or Denied?</em></h1>
+      <p class="hero-sub">
+        Every year, insurance companies offer homeowners far less than what their
+        property damage actually costs to repair. If your storm or property damage
+        claim was underpaid or denied, you may be entitled to significantly more.
+      </p>
+      <ul class="hero-checks">
+        <li>Storm damage</li>
+        <li>Water damage</li>
+        <li>Fire damage</li>
+        <li>Roof damage</li>
+        <li>Wind &amp; hail damage</li>
+      </ul>
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <div class="hero-stat-num">$Billions</div>
+          <div class="hero-stat-label">Underpaid Annually</div>
+        </div>
+        <div class="hero-stat">
+          <div class="hero-stat-num">85%</div>
+          <div class="hero-stat-label">Of Claims Underpaid</div>
+        </div>
+        <div class="hero-stat">
+          <div class="hero-stat-num">100%</div>
+          <div class="hero-stat-label">Free Consultation</div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-form-card" id="form">
+      <h3>Free Case Review</h3>
+      <p class="hero-form-sub">Find out what your claim is really worth</p>
+      <form id="leadForm" novalidate>
+        <div class="hero-form-row">
+          <div class="form-group">
+            <label for="name">Full Name *</label>
+            <input type="text" id="name" name="name" placeholder="Your full name" required>
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone *</label>
+            <input type="tel" id="phone" name="phone" placeholder="(555) 555-5555" required>
+          </div>
+        </div>
+        <div class="hero-form-row">
+          <div class="form-group">
+            <label for="email">Email *</label>
+            <input type="email" id="email" name="email" placeholder="your@email.com" required>
+          </div>
+          <div class="form-group">
+            <label for="zipcode">Zip Code *</label>
+            <input type="text" id="zipcode" name="zipcode" placeholder="e.g. 33101" required maxlength="10">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="damageType">Type of Damage *</label>
+          <select id="damageType" name="damageType" required>
+            <option value="">-- Select type of damage --</option>
+            <option value="Storm/Hurricane">Storm / Hurricane</option>
+            <option value="Water/Flood">Water / Flood</option>
+            <option value="Fire">Fire</option>
+            <option value="Roof">Roof</option>
+            <option value="Wind/Hail">Wind / Hail</option>
+            <option value="Mold">Mold</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="claimStatus">Has your claim been denied or underpaid? *</label>
+          <select id="claimStatus" name="claimStatus" required>
+            <option value="">-- Select --</option>
+            <option value="Yes - Denied">Yes, my claim was denied</option>
+            <option value="Yes - Underpaid">Yes, my claim was underpaid</option>
+            <option value="Not yet filed">I have not yet filed a claim</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+        <button type="submit" class="hero-form-submit" id="submitBtn">Get My Free Case Review</button>
+        <p class="form-note">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg>
+          Your information is secure and confidential
+        </p>
+      </form>
+      <div class="thank-you" id="thankYou">
+        <div class="thank-you-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M20 6L9 17l-5-5"/></svg>
+        </div>
+        <h3>Thank You</h3>
+        <p>A claims specialist will review your case and contact you within 24 hours to discuss your options.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Info Ribbon -->
+<div class="info-ribbon">
+  <p><span class="shield-icon"></span> <strong>Insurance companies profit by underpaying claims.</strong> We help you fight back and recover what you deserve. <span class="shield-icon"></span></p>
+</div>
+
+<!-- About -->
+<section class="about">
+  <div class="section reveal" style="max-width:1100px;margin:0 auto;padding:4.5rem 1.5rem">
+    <div class="section-label">Understanding Your Rights</div>
+    <h2 class="section-title">Your Claim May Be Worth More Than You Think</h2>
+    <p class="section-desc">
+      Insurance companies have teams of adjusters working to minimize payouts.
+      Our experts level the playing field and fight to get you the full amount
+      your policy entitles you to.
+    </p>
+    <div class="about-grid">
+      <div class="about-card">
+        <h3>Underpaid Claims</h3>
+        <p>
+          Insurance companies routinely offer settlements far below what damage
+          actually costs to repair. Their adjusters use outdated pricing, overlook
+          hidden damage, and apply unfair depreciation to minimize your payout.
+          You deserve the full cost of restoring your property.
+        </p>
+      </div>
+      <div class="about-card">
+        <h3>Denied Claims</h3>
+        <p>
+          If your claim was wrongfully denied, you have the right to challenge the
+          decision and recover what you are owed. Common denial reasons -- such as
+          pre-existing damage, missed deadlines, or policy exclusions -- can often
+          be successfully disputed with proper documentation and representation.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Qualify -->
+<section class="section reveal">
+  <div class="section-label">Eligibility</div>
+  <h2 class="section-title">How to Qualify</h2>
+  <p class="section-desc">You may be eligible for claim recovery assistance if the following apply to you:</p>
+  <div class="qualify-list">
+    <div class="qualify-item">
+      <div class="qualify-num"></div>
+      <div class="qualify-text">
+        <h4>You Own Property That Was Damaged</h4>
+        <p>Your home, business, rental property, or other insured structure sustained damage from a covered event such as a storm, fire, flooding, or other peril.</p>
+      </div>
+    </div>
+    <div class="qualify-item">
+      <div class="qualify-num"></div>
+      <div class="qualify-text">
+        <h4>Your Claim Was Underpaid or Denied</h4>
+        <p>You filed an insurance claim and received an offer that does not cover the full cost of repairs, or your claim was denied entirely by your insurance company.</p>
+      </div>
+    </div>
+    <div class="qualify-item">
+      <div class="qualify-num"></div>
+      <div class="qualify-text">
+        <h4>Damage Has Not Been Fully Repaired</h4>
+        <p>Your property has not yet been fully restored to its pre-loss condition. Partial repairs, temporary fixes, or unaddressed damage all qualify.</p>
+      </div>
+    </div>
+    <div class="qualify-item">
+      <div class="qualify-num"></div>
+      <div class="qualify-text">
+        <h4>Within the Statute of Limitations</h4>
+        <p>Your claim falls within the applicable filing deadline for your state. Even if time has passed, you may still have options -- contact us to find out.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Types of Damage We Handle -->
+<section class="conditions">
+  <div class="section reveal" style="max-width:1100px;margin:0 auto;padding:4.5rem 1.5rem">
+    <div class="section-label">Coverage Areas</div>
+    <h2 class="section-title">Types of Damage We Handle</h2>
+    <p class="section-desc">We assist property owners with all types of insured damage claims, including:</p>
+    <div class="conditions-grid">
+      <div class="condition-tag">Hurricane</div>
+      <div class="condition-tag">Tornado</div>
+      <div class="condition-tag">Hail</div>
+      <div class="condition-tag">Wind</div>
+      <div class="condition-tag">Flooding</div>
+      <div class="condition-tag">Water Damage</div>
+      <div class="condition-tag">Fire</div>
+      <div class="condition-tag">Smoke Damage</div>
+      <div class="condition-tag">Roof Damage</div>
+      <div class="condition-tag">Mold</div>
+      <div class="condition-tag">Burst Pipes</div>
+      <div class="condition-tag">Foundation Damage</div>
+      <div class="condition-tag">Lightning</div>
+      <div class="condition-tag">Vandalism</div>
+      <div class="condition-tag">Theft</div>
+      <div class="condition-tag">Structural Damage</div>
+    </div>
+  </div>
+</section>
+
+<!-- Trust -->
+<section class="section reveal" style="text-align:center">
+  <div class="section-label" style="text-align:center">Why Choose Us</div>
+  <h2 class="section-title" style="text-align:center;margin-left:auto;margin-right:auto">We Fight for Property Owners</h2>
+  <div class="trust-grid">
+    <div class="trust-card">
+      <div class="trust-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+      </div>
+      <h3>No Fees Unless You Recover</h3>
+      <p>You pay nothing upfront. We only get paid when you do. Our interests are fully aligned with yours -- we succeed when you succeed.</p>
+    </div>
+    <div class="trust-card">
+      <div class="trust-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2v20M2 12h20"/><circle cx="12" cy="12" r="10"/></svg>
+      </div>
+      <h3>Maximize Your Payout</h3>
+      <p>Our experts know how insurance companies operate. We identify every dollar of damage they missed and fight to get you the full amount you deserve.</p>
+    </div>
+    <div class="trust-card">
+      <div class="trust-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+      </div>
+      <h3>We Handle Everything</h3>
+      <p>From paperwork to negotiations to resolution, we manage the entire claims process so you do not have to. Focus on your life while we fight for your recovery.</p>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq">
+  <div class="section reveal" style="max-width:1100px;margin:0 auto;padding:4.5rem 1.5rem">
+    <div class="section-label">Common Questions</div>
+    <h2 class="section-title">Frequently Asked Questions</h2>
+    <div class="faq-list">
+      <div class="faq-item">
+        <button class="faq-question" onclick="this.parentElement.classList.toggle('open')">
+          How do I know if my claim was underpaid?
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="faq-answer">
+          <p>If your insurance payout does not cover the full cost of repairing or replacing the damage to your property, your claim was likely underpaid. Common signs include receiving an estimate that seems too low, having damage that the adjuster did not include, or being told certain repairs are not covered when they should be. Our team can review your claim at no cost to determine if you are owed more.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" onclick="this.parentElement.classList.toggle('open')">
+          What if my insurance company denied my claim?
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="faq-answer">
+          <p>A denial does not mean the end of the road. Insurance companies deny claims for many reasons, and many denials can be successfully overturned. Whether the denial was based on a policy exclusion, a missed deadline, or a dispute about the cause of damage, our experts can evaluate your situation and help you challenge the decision.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" onclick="this.parentElement.classList.toggle('open')">
+          How long do I have to file a claim?
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="faq-answer">
+          <p>The statute of limitations for insurance claims varies by state and type of damage, but generally ranges from one to five years from the date of the loss or the date you discovered the damage. It is important to act quickly, as waiting too long can jeopardize your ability to recover. Contact us for a free review to determine your specific deadline.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" onclick="this.parentElement.classList.toggle('open')">
+          What types of property damage are covered?
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="faq-answer">
+          <p>We handle claims for virtually all types of property damage covered by homeowners, commercial, and rental property insurance policies. This includes storm damage (hurricanes, tornadoes, hail, wind), water damage, fire and smoke damage, roof damage, mold, burst pipes, foundation issues, lightning, vandalism, theft, and more. If your property was damaged and you have insurance, we can help.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" onclick="this.parentElement.classList.toggle('open')">
+          Do I need to pay anything upfront?
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="faq-answer">
+          <p>No. Our case review is completely free with no obligation. If we take your case, we work on a contingency basis, which means we only collect a fee if we successfully recover additional funds for you. There are no upfront costs, hidden charges, or out-of-pocket expenses.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" onclick="this.parentElement.classList.toggle('open')">
+          What should I do after storm damage?
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="faq-answer">
+          <p>After storm damage, document everything with photos and videos before making any temporary repairs. Prevent further damage where possible (cover broken windows, tarp the roof), but do not make permanent repairs until your claim is properly evaluated. File your insurance claim promptly, keep all receipts, and contact us before accepting any settlement offer from your insurance company.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA Banner -->
+<section class="cta-banner">
+  <h2>Don't Let Your Insurance Company Shortchange You</h2>
+  <p>Take the first step toward recovering what you are owed. Our free case review takes just minutes.</p>
+  <a href="#" class="cta-banner-btn" onclick="document.getElementById('form').scrollIntoView({behavior:'smooth'});return false;">Get Your Free Case Review</a>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <p class="footer-disc">
+    <strong>Legal Disclaimer:</strong> This website is an advertisement for claim recovery
+    services. The information on this site is not legal advice and does not create an
+    attorney-client relationship. Results from prior cases do not guarantee a similar outcome.
+    Each case is different and must be evaluated on its own merits. By submitting your
+    information, you consent to being contacted by a claims representative regarding your
+    potential claim recovery. We are not a law firm. If legal representation is needed,
+    we will connect you with a qualified attorney in your area.
+  </p>
+  <div class="footer-contact">
+    <p><strong>ClaimRecoveryHelp.com</strong></p>
+  </div>
+  <p class="footer-links"><a href="#" onclick="document.getElementById('privacyModal').style.display='flex';return false;">Privacy Policy</a> &nbsp;|&nbsp; <a href="#" onclick="document.getElementById('termsModal').style.display='flex';return false;">Terms of Service</a></p>
+  <p class="footer-copy">&copy; 2026 ClaimRecoveryHelp.com. All rights reserved.</p>
+</footer>
+
+<!-- Privacy Policy Modal -->
+<div id="privacyModal" class="legal-modal" onclick="if(event.target===this)this.style.display='none'">
+  <div class="legal-modal-content">
+    <button class="legal-close" onclick="this.parentElement.parentElement.style.display='none'">&times;</button>
+    <h2>Privacy Policy</h2>
+    <p><strong>Last updated:</strong> April 27, 2026</p>
+    <h3>Information We Collect</h3>
+    <p>When you submit our case review form, we collect your name, phone number, email address, zip code, and information related to your property damage claim including the type of damage and the status of your insurance claim.</p>
+    <h3>How We Use Your Information</h3>
+    <p>Your information is used solely to evaluate your potential claim and to connect you with a qualified claims recovery specialist. We may contact you by phone, email, or text message regarding your case submission.</p>
+    <h3>Information Sharing</h3>
+    <p>We may share your information with affiliated claims recovery professionals, public adjusters, and attorneys for the purpose of evaluating and potentially representing your claim. We do not sell your personal information to third parties for marketing purposes.</p>
+    <h3>Data Security</h3>
+    <p>We implement reasonable security measures to protect your personal information. However, no method of electronic transmission or storage is 100% secure.</p>
+    <h3>Your Rights</h3>
+    <p>You may request access to, correction of, or deletion of your personal information by contacting us. California residents have additional rights under the CCPA.</p>
+    <h3>Contact</h3>
+    <p>For privacy-related inquiries, please contact us through the information provided on this website.</p>
+  </div>
+</div>
+
+<!-- Terms of Service Modal -->
+<div id="termsModal" class="legal-modal" onclick="if(event.target===this)this.style.display='none'">
+  <div class="legal-modal-content">
+    <button class="legal-close" onclick="this.parentElement.parentElement.style.display='none'">&times;</button>
+    <h2>Terms of Service</h2>
+    <p><strong>Last updated:</strong> April 27, 2026</p>
+    <h3>No Attorney-Client Relationship</h3>
+    <p>Submitting your information through this website does not create an attorney-client relationship. This website is operated by a claims recovery service, not a law firm. If legal representation is required, we will refer you to a qualified attorney.</p>
+    <h3>Not Legal Advice</h3>
+    <p>The content on this website is for informational purposes only and does not constitute legal advice. Every claim is unique and past results do not guarantee future outcomes.</p>
+    <h3>Service Description</h3>
+    <p>We provide claim recovery assistance to property owners whose insurance claims have been underpaid or denied. Our services include claim evaluation, documentation review, and connecting you with appropriate professionals.</p>
+    <h3>Eligibility</h3>
+    <p>The information provided on this site regarding potential claims is general in nature. Whether you have a viable claim depends on the specific facts and circumstances of your situation, which must be evaluated by a qualified professional.</p>
+    <h3>No Guarantee</h3>
+    <p>We make no guarantees about the outcome of any claim. Recovery amounts, if any, vary based on individual circumstances, policy terms, and the extent of damage.</p>
+    <h3>Contact and Communication</h3>
+    <p>By submitting your information, you consent to being contacted by phone, email, or text message regarding your potential claim. You may opt out of communications at any time.</p>
+    <h3>Changes to Terms</h3>
+    <p>We reserve the right to update these terms at any time. Continued use of this website constitutes acceptance of any changes.</p>
+  </div>
+</div>
+
+<script>
+// Scroll reveal
+var revealEls = document.querySelectorAll('.reveal');
+var revealObserver = new IntersectionObserver(function(entries) {
+  entries.forEach(function(e) {
+    if (e.isIntersecting) {
+      e.target.classList.add('visible');
+      revealObserver.unobserve(e.target);
+    }
+  });
+}, { threshold: 0.15 });
+revealEls.forEach(function(el) { revealObserver.observe(el); });
+
+// Phone formatting
+var phoneInput = document.getElementById('phone');
+phoneInput.addEventListener('input', function() {
+  var v = this.value.replace(/\D/g, '');
+  if (v.length >= 6) v = '(' + v.slice(0,3) + ') ' + v.slice(3,6) + '-' + v.slice(6,10);
+  else if (v.length >= 3) v = '(' + v.slice(0,3) + ') ' + v.slice(3);
+  this.value = v;
+});
+
+// Zip code formatting (numbers only)
+var zipInput = document.getElementById('zipcode');
+zipInput.addEventListener('input', function() {
+  this.value = this.value.replace(/[^\d-]/g, '');
+});
+
+// Form submission
+document.getElementById('leadForm').addEventListener('submit', async function(e) {
+  e.preventDefault();
+  var nameVal = document.getElementById('name').value.trim();
+  var phoneVal = document.getElementById('phone').value.trim();
+  var emailVal = document.getElementById('email').value.trim();
+  var zipVal = document.getElementById('zipcode').value.trim();
+  var damageVal = document.getElementById('damageType').value;
+  var statusVal = document.getElementById('claimStatus').value;
+
+  if (!nameVal || !phoneVal || !emailVal || !zipVal) {
+    alert('Please fill in all required fields: name, phone, email, and zip code.');
+    return;
+  }
+  if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(emailVal)) {
+    alert('Please enter a valid email address.');
+    return;
+  }
+  if (!damageVal) {
+    alert('Please select the type of damage.');
+    return;
+  }
+  if (!statusVal) {
+    alert('Please indicate the status of your claim.');
+    return;
+  }
+
+  var btn = document.getElementById('submitBtn');
+  btn.disabled = true;
+  btn.textContent = 'Submitting...';
+
+  var formData = {
+    name: nameVal,
+    phone: phoneVal,
+    email: emailVal,
+    zip_code: zipVal,
+    damage_type: damageVal,
+    claim_status: statusVal,
+    source: 'ClaimRecoveryHelp.com',
+    submitted_at: new Date().toISOString()
+  };
+
+  try {
+    // Submit to Google Apps Script -- replace URL with your deployed script URL
+    await fetch('YOUR_GOOGLE_SCRIPT_URL', {
+      method: 'POST',
+      body: JSON.stringify(formData),
+      mode: 'no-cors'
+    });
+  } catch (err) {
+    console.error('Submit error:', err);
+  }
+
+  // CONVERSION TRACKING PLACEHOLDER:
+  // Add your conversion tracking code here when ready, e.g.:
+  // gtag('event', 'conversion', {'send_to': 'AW-XXXXXXXXXX/XXXXXXXXXXXXXXXXXXX'});
+
+  // Show thank you
+  this.style.display = 'none';
+  document.getElementById('thankYou').classList.add('show');
+  window.scrollTo({ top: document.getElementById('form').offsetTop - 80, behavior: 'smooth' });
+});
+</script>
+</body>
+</html>
