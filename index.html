@@ -5,6 +5,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Property Damage Insurance Claim Recovery | Free Case Review | ClaimRecoveryHelp.com</title>
 <meta name="description" content="Was your insurance claim underpaid or denied? Our experts help homeowners recover the full amount they deserve for property damage. Free case review, no fees unless you recover.">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-18028124514"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'AW-18028124514');
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400&family=Source+Sans+3:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -669,9 +677,8 @@ document.getElementById('leadForm').addEventListener('submit', async function(e)
     console.error('Submit error:', err);
   }
 
-  // CONVERSION TRACKING PLACEHOLDER:
-  // Add your conversion tracking code here when ready, e.g.:
-  // gtag('event', 'conversion', {'send_to': 'AW-XXXXXXXXXX/XXXXXXXXXXXXXXXXXXX'});
+  // Google Ads conversion tracking on form submit
+  gtag('event', 'conversion', {'send_to': 'AW-18028124514/CONVERSION_LABEL_HERE'});
 
   // Show thank you
   this.style.display = 'none';
